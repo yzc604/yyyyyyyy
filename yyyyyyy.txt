@@ -1,0 +1,477 @@
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "你的脚本名称（羊）",
+    Text = "正在加载（你的帐户密码已知道）",
+    Duration = 5, 
+})
+print("你已变成傻逼")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
+local Window = OrionLib:MakeWindow({Name = "羊脚本", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用羊脚本", ConfigFolder = "欢迎使用羊脚本"})
+local about = Window:MakeTab({
+    Name = "脚本名称",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+
+local Tab = Window:MakeTab({
+  Name = "通用脚本",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "小羊飞行",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastefy.app/BbI04Jwi/raw'),true))()
+
+end
+})
+Tab:AddButton({
+	Name = "透视",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))()
+
+end
+})
+Tab:AddButton({
+	Name = "速度",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/Zuw5T7DP",true))()
+
+end
+})
+Tab:AddButton({
+	Name = "自瞄",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "隐形",
+	Callback = function()
+
+loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+
+end
+})
+Tab:AddButton({
+	Name = "防20分钟踢",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastefy.app/6QUXuVkW/raw'),true))()
+
+end
+})
+Tab:AddButton({
+	Name = "穿墙",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
+
+end
+})
+Tab:AddButton({
+	Name = "范围",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "解帧",
+	Callback = function()
+
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FpsBoost-9260"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "娱乐",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "贴贴",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BingusWR/FreakyAnimationScript/refs/heads/main/FreakyRobloxAnimation"))()
+
+end
+})
+Tab:AddButton({
+	Name = " 死亡声音",
+	Callback = function()
+
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Died.SoundId = "rbxassetid://8491769438"
+
+end
+})
+Tab:AddButton({
+	Name = "改画质",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastefy.app/vqTWk13G/raw'),true))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "各种甩飞",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "碰到就飞",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+
+end
+})
+Tab:AddButton({
+	Name = "输入名字起飞",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastefy.app/9SmQXduA/raw'),true))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "cw",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "远程",
+	Callback = function()
+
+_G.HeadSize = 20
+_G.Disabled = true
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.Head.Transparency = 1
+v.Character.Head.BrickColor = BrickColor.new("Red")
+v.Character.Head.Material = "Neon"
+v.Character.Head.CanCollide = false
+v.Character.Head.Massless = true
+end)
+end
+end
+end
+end)
+
+end
+})
+Tab:AddButton({
+	Name = "近战最强（要卡密）",
+	Callback = function()
+
+local __function = loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua", true))
+
+__function(__function)
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "巴掌",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "通用",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))() 
+
+end
+})
+Tab:AddButton({
+	Name = "踢人",
+	Callback = function()
+
+loadstring(game:HttpGet(" https://raw.githubusercontent.com/AquoupiRblx/SlapBattles/refs/heads/main/KickUISwapper.lua"))()
+
+end
+}) Tab:AddButton({
+	Name = "大逃杀",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Voxul/VoxulHub/main/loader.lua' ))()
+
+end
+
+})
+
+local Tab = Window:MakeTab({
+  Name = "门",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "最强英文",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2RW.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "room",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "最坚强的战斗",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "多功能好用英文",
+	Callback = function()
+
+getgenv().ToggleKeybind = Enum.KeyCode.RightControl
+getgenv().FreeEmotesTab = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "TOJI",
+	Callback = function()
+
+loadstring(game:HttpGet('https://pastebin.com/raw/VQnyWP5D'))()
+
+end
+})
+Tab:AddButton({
+	Name = "GOJO",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "kj",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/kJ%20Moveset%20V2%20by%20camerawoman"))()
+
+end
+})
+Tab:AddButton({
+	Name = "FEkj",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Don't/Use/this/script/main/this%IS%JokeFreeKJFe%Milo_meh%"))()
+
+end
+})
+Tab:AddButton({
+	Name = "NewKJ",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/JKKZdLN5"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "俄亥俄州",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = " 一拳超人",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/iayys6Sv"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "刀刃球",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "最新最强英文",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Testblade.lua", true))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "破坏者谜团2",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "最强英文要卡密",
+	Callback = function()
+
+loadstring(game:HttpGet(" https://overdrive-h.ohd.workers.dev/?d=loader"))()
+
+end
+})
+Tab:AddButton({
+	Name = "好用无需卡密",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "躲避",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "好用不闪退",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "河北唐县",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "小皮",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/Pi-script-Hebeitangxian.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "还行",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "bf",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "英文最强",
+	Callback = function()
+
+loadstring(game:HttpGet" https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua")()
+
+end
+})
+Tab:AddButton({
+	Name = "汉化还行",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E6%B5%B7%E8%B4%BC%E7%8E%8Bbf.lua", true))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "感染的微笑",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "英文目前好用",
+	Callback = function()
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Justaverageguym/Hub/main/Scripts/Infectious%20smile.lua")))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "solRng",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "英文最强",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThacG/EruditeHub/main/Sol's%20RNG/V1.69"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "自然灾害",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "黑洞请用iy指令飞行",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/pYhER1z4/raw"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "速度传奇",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "只有最强",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
+
+end
+})
