@@ -1,29 +1,28 @@
+local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title = "羊脚本",    Text = "耐心等待（反挂机已开启）",    Duration = 5, })print("反挂机开启")		local vu = game:GetService("VirtualUser")		game:GetService("Players").LocalPlayer.Idled:connect(function()		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		   wait(1)		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		end)
 
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "你的脚本名称（羊）",
-    Text = "正在加载（你的帐户密码已知道）",
-    Duration = 5, 
-})
-print("你已变成傻逼")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "羊脚本", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用羊脚本", ConfigFolder = "欢迎使用羊脚本"})
-local about = Window:MakeTab({
-    Name = "脚本名称",
-    Icon = "rbxassetid://4483345998",
+
+local Window = OrionLib:MakeWindow({Name = "羊脚本", HidePremium = false, SaveConfig = false, IntroText = "欢迎使用", ConfigFolder = "欢迎使用"})
+
+local Tab = Window:MakeTab({
+    Name = "脚本公告",
+    Icon = "rbxassetid://10527577695",
     PremiumOnly = false
 })
 
-about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
-about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
-about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+Tab:AddParagraph("作者","yzc")
+Tab:AddLabel("此脚本完全免费")
+Tab:AddLabel("作者q号292585170")
+Tab:AddLabel("你的注入器:"..identifyexecutor())
+Tab:AddLabel("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+Tab:AddButton({
+   Name = "点击复制群号",
+   Callback = function()
+    setclipboard("292585170")
+   end
+})
+Tab:AddLabel("此脚本为免费缝合脚本")
+Tab:AddLabel("禁止倒卖")
 
 local Tab = Window:MakeTab({
   Name = "通用脚本",
@@ -86,6 +85,15 @@ loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
 
 end
 })
+Tab:AddToggle({
+	Name = "无限跳",
+       Default = false,
+	Callback = function(Value)
+
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+
+end
+})
 Tab:AddButton({
 	Name = "范围",
 	Callback = function()
@@ -102,12 +110,6 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FpsBoost-92
 
 end
 })
-
-local Tab = Window:MakeTab({
-  Name = "娱乐",
-  Icon = "rbxassetid://4483345998",
-  PremiumOnly = false
-  })
 Tab:AddButton({
 	Name = "贴贴",
 	Callback = function()
@@ -132,6 +134,38 @@ loadstring(game:HttpGet(('https://pastefy.app/vqTWk13G/raw'),true))()
 
 end
 })
+Tab:AddButton({
+	Name = "工具挂",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "铁拳",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()
+
+end
+})
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/G3GnBCyC", true))()
+
+end
+})
+Tab:AddButton({
+       Name = "死亡笔记",
+       Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0%20(1).txt"))()
+
+end
+})
 
 local Tab = Window:MakeTab({
   Name = "各种甩飞",
@@ -143,6 +177,14 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+
+end
+})
+Tab:AddButton({
+	Name = "甩飞所有人",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 
 end
 })
