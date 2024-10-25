@@ -65,7 +65,7 @@ Tab:AddButton({
 	Name = "隐形",
 	Callback = function()
 
-loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+loadstring(game:HttpGet("https://pastefy.app/kXJOqEoG/raw",true))()
 
 end
 })
