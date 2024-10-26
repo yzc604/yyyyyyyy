@@ -6,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "羊脚本", HidePremium = false, Sav
 
 local Tab = Window:MakeTab({
     Name = "脚本公告",
-    Icon = "rbxassetid://10527577695",
+    Icon = "rbxassetid://18107430261",
     PremiumOnly = false
 })
 
@@ -26,9 +26,10 @@ Tab:AddLabel("禁止倒卖")
 
 local Tab = Window:MakeTab({
   Name = "通用脚本",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
+Tab:AddParagraph("yzc","飞行")
 Tab:AddButton({
 	Name = "小羊飞行",
 	Callback = function()
@@ -37,22 +38,24 @@ loadstring(game:HttpGet(('https://pastefy.app/BbI04Jwi/raw'),true))()
 
 end
 })
+
 Tab:AddButton({
-	Name = "透视",
+	Name = "v1飞行",
 	Callback = function()
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
 
 end
 })
 Tab:AddButton({
-	Name = "速度",
+	Name = "鸭子飞行",
 	Callback = function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/Zuw5T7DP",true))()
+loadstring(game:HttpGet('https://rentry.co/shadiao_yazifly/raw'))()
 
 end
 })
+Tab:AddParagraph("yzc","自瞄")
 Tab:AddButton({
 	Name = "自瞄",
 	Callback = function()
@@ -62,13 +65,23 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-wor
 end
 })
 Tab:AddButton({
-	Name = "隐形",
+	Name = "宙斯自瞄",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))()
+
+end
+})
+Tab:AddParagraph("隐形","不段更新")
+Tab:AddButton({
+	Name = "最新隐形",
 	Callback = function()
 
 loadstring(game:HttpGet("https://pastefy.app/kXJOqEoG/raw",true))()
 
 end
 })
+Tab:AddParagraph("之后的不排了","因为懒")
 Tab:AddButton({
 	Name = "防20分钟踢",
 	Callback = function()
@@ -85,7 +98,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
 
 end
 })
-Tab:AddToggle({
+Tab:AddButton({
 	Name = "无限跳",
        Default = false,
 	Callback = function(Value)
@@ -169,7 +182,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "各种甩飞",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -199,7 +212,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "cw",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -240,7 +253,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "巴掌",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -270,7 +283,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "门",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -300,7 +313,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "最坚强的战斗",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -356,7 +369,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "俄亥俄州",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -370,7 +383,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "刀刃球",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -384,7 +397,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "破坏者谜团2",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -406,7 +419,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "躲避",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -420,7 +433,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "河北唐县",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -442,7 +455,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "bf",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -464,7 +477,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "感染的微笑",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -478,7 +491,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "solRng",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -492,7 +505,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "自然灾害",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -506,7 +519,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "速度传奇",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -520,7 +533,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "战争大亨",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -545,6 +558,28 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ohiojjj/78/main/.github/workflows/Protected_5786868815098093.lua"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "樱花摊位",
+  Icon = "rbxassetid://18107430261",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "英文",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()
+
+end
+})
+Tab:AddButton({
+	Name = "复制上面卡密",
+	Callback = function()
+
+setclipboard("getgenv().ValidateType")
 
 end
 })
