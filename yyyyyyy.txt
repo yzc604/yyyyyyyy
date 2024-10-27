@@ -29,6 +29,65 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
+Tab:AddParagraph("yzc","调节区")
+Tab:AddSlider({
+	Name = "速度",
+	Min = 16,
+	Max = 200,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "数值",
+	Callback = function(Value)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+end    
+})
+Tab:AddSlider({
+	Name = "跳跃高度",
+	Min = 50,
+	Max = 200,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "数值",
+	Callback = function(Value)
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+end 
+})
+Tab:AddTextbox({
+	Name = "移动速度设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+end
+})
+Tab:AddTextbox({
+	Name = "跳跃高度设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+end
+})
+Tab:AddTextbox({
+	Name = "移动速度设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+end
+})
 Tab:AddParagraph("yzc","飞行")
 Tab:AddButton({
 	Name = "小羊飞行",
@@ -90,6 +149,30 @@ loadstring(game:HttpGet("https://pastefy.app/kXJOqEoG/raw",true))()
 end
 })
 Tab:AddParagraph("yzc","范围")
+Tab:AddTextbox({	Name = "范围自己设置",	Default = "",	TextDisappear = true,	Callback = function(Value)
+
+
+
+_G.HeadSize = Value
+_G.Disabled = true
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+
+end
+})
 Tab:AddButton({
 	Name = "普通范围",
 	Callback = function()
@@ -122,6 +205,24 @@ loadstring(game:HttpGet("https://pastebin.com/raw/CAQ9x4A7"))()
 
 end
 })
+Tab:AddParagraph("yzc","开关区")
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+
+		if Value then
+
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+		else
+
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+		end
+
+end
+})
 Tab:AddParagraph("之后的不排了","因为懒")
 Tab:AddButton({
 	Name = "防20分钟踢",
@@ -141,10 +242,17 @@ end
 })
 Tab:AddButton({
 	Name = "无限跳",
-       Default = false,
-	Callback = function(Value)
+	Callback = function()
 
 loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+
+end
+})
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
 
 end
 })
