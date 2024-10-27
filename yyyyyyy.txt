@@ -257,6 +257,14 @@ loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
 end
 })
 Tab:AddButton({
+	Name = "透视",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+
+end
+})
+Tab:AddButton({
 	Name = "解帧",
 	Callback = function()
 
