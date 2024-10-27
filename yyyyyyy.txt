@@ -57,10 +57,10 @@ end
 })
 Tab:AddParagraph("yzc","自瞄")
 Tab:AddButton({
-	Name = "自瞄",
+	Name = "小羊自瞄（死亡消失）",
 	Callback = function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))()
+loadstring(game:HttpGet("https://pastefy.app/ZYMlyhhz/raw",true))()
 
 end
 })
@@ -69,6 +69,14 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "英文自瞄",
+	Callback = function()
+
+loadstring(game:HttpGet("https://rentry.co/n55gmtpi/raw", true))()
 
 end
 })
@@ -222,10 +230,98 @@ end
 })
 
 local Tab = Window:MakeTab({
+  Name = "圆圈自瞄",
+  Icon = "rbxassetid://18107430261",
+  PremiumOnly = false
+  })
+Tab:AddParagraph("yzc","好用的圆圈自瞄")
+Tab:AddButton({
+       Name = "自瞄50",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/b3uXjRF6/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄100",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/tQrd2r0L/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄150",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/UOQWFvGp/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄200",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/b5CuDuer/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄250",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/p2huH7eF/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄300",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/nIyVhrvV/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄350",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/pnjKHMvV/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄400",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/LQuP7sjj/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄600",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/WmcEe2HB/raw",true))()
+
+end
+})
+Tab:AddButton({
+       Name = "自瞄全屏",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/n5LhGGgf/raw",true))()
+
+end
+})
+
+local Tab = Window:MakeTab({
   Name = "各种甩飞",
   Icon = "rbxassetid://18107430261",
   PremiumOnly = false
   })
+Tab:AddParagraph("温馨提示","请勿当初生")
 Tab:AddButton({
 	Name = "碰到就飞",
 	Callback = function()
