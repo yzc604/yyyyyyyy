@@ -223,6 +223,20 @@ Tab:AddToggle({
 
 end
 })
+Tab:AddToggle({
+	Name = "无限跳",
+	Default = false,
+	Callback = function(Value)
+      Jump = Value
+
+game.UserInputService.JumpRequest:Connect(function()
+            if Jump then
+                game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+            end
+        end)
+
+end
+})
 Tab:AddParagraph("之后的不排了","因为懒")
 Tab:AddButton({
 	Name = "防20分钟踢",
@@ -233,18 +247,10 @@ loadstring(game:HttpGet(('https://pastefy.app/6QUXuVkW/raw'),true))()
 end
 })
 Tab:AddButton({
-	Name = "穿墙",
+	Name = "汉化穿墙",
 	Callback = function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
-
-end
-})
-Tab:AddButton({
-	Name = "无限跳",
-	Callback = function()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
 
 end
 })
@@ -344,6 +350,22 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/mai
 
 end
 })
+Tab:AddButton({
+       Name = "玩家加入游戏提示",
+       Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+
+end
+})
+Tab:AddButton({
+       Name = "获得管理员权限",
+       Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/sZpgTVas"))()
+
+end
+})
 
 local Tab = Window:MakeTab({
   Name = "圆圈自瞄",
@@ -433,6 +455,53 @@ end
 })
 
 local Tab = Window:MakeTab({
+  Name = "FE",
+  Icon = "rbxassetid://18107430261",
+  PremiumOnly = false
+  })
+Tab:AddParagraph("FE脚本","一直更新")
+Tab:AddButton({
+	Name = "获得游戏所有道具",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/gametoolgiver.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "变npc",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty13.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "超长坤坤",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/ESWSFND7", true))()
+
+end
+})
+Tab:AddButton({
+	Name = "动画中心",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+
+end
+})
+Tab:AddButton({
+	Name = "C00lgui",
+	Callback = function()
+
+loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+
+end
+})
+
+local Tab = Window:MakeTab({
   Name = "各种甩飞",
   Icon = "rbxassetid://18107430261",
   PremiumOnly = false
@@ -459,6 +528,53 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet(('https://pastefy.app/9SmQXduA/raw'),true))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "没事别点进来",
+  Icon = "rbxassetid://18107430261",
+  PremiumOnly = false
+  })
+Tab:AddParagraph("yzc","没事别点")
+Tab:AddButton({
+	Name = "获得100r",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/eee/refs/heads/main/666.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "获得200r",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/eee/refs/heads/main/666.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "获得300r",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/eee/refs/heads/main/666.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "获得400r",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/eee/refs/heads/main/666.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "获得500r",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/eee/refs/heads/main/666.txt"))()
 
 end
 })
