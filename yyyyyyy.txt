@@ -90,7 +90,7 @@ about:Slider("跳跃高度!", "JumpPower", game.Players.LocalPlayer.Character.Hu
   spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jump end end)
 end)
 
-about:Slider('设置重力', 'Sliderflag', 196.2, 196.2, 1000,false, function(Value)
+about:Slider('设置重力!', 'Sliderflag', 196.2, 196.2, 1000,false, function(Value)
         game.Workspace.Gravity = Value
 end)
 
