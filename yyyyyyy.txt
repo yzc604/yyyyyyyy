@@ -46,7 +46,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本』"; Text ="欢迎使用♣"; Duration = 4; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/wwwwwwwwww/refs/heads/main/yzc%20ui.txt"))();        
-local win = ui:new("羊脚本🤓🤓🤓")
+local win = ui:new("羊脚本")
 
 local UITab1 = win:Tab("『公告』",'7734068321')
 
