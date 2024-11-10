@@ -195,6 +195,10 @@ about:Button("防20分钟踢",function()
 loadstring(game:HttpGet(('https://pastefy.app/6QUXuVkW/raw'),true))()
 end)
 
+about:Button("iy指令",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
 about:Button("汉化穿墙",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
 end)
