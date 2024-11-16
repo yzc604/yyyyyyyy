@@ -1401,8 +1401,11 @@ local UITab1 = win:Tab("『杀手与警长』",'7734068321')
 
 local about = UITab1:section("『杀手与警长』",true)
 
-about:Button("杀手与警长1",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/yadbPQUm",true))()
+about:Button("最好用秒杀",function()
+local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/MVSD%20UPD2.lua'
+local response = game:HttpGet(scriptURL)
+local executeScript = loadstring(response)
+executeScript()
 end)
 
 about:Button("杀手与警长秒杀",function()
