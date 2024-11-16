@@ -402,6 +402,10 @@ local UITab1 = win:Tab("『甩飞』",'7734068321')
 
 local about = UITab1:section("『别当出生』",true)
 
+about:Button("旋转甩飞",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%97%8B%E8%BD%AC.lua"))()
+end)
+
 about:Button("碰到就飞",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
 end)
