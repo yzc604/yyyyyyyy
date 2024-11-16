@@ -350,16 +350,17 @@ end)
 about:Button("FE 1x1x1x1", function()
 loadstring(game:HttpGet("https://pastefy.app/IatH6evt/raw",true))()
 end)
-about:Button("FE大长腿", function()
-    loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/7291747e9f093555573e027621f08d6e/raw/23b48f2463942befe19d81aa8a06e3222996242c/FE%2520Da%2520Feets'))()
+
+about:Button("奔跑", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uacVtsWe"))()
 end)
 
-about:Button("FE用头", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/BK4Q0DfU"))()
+about:Button("第一视角", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/First%20person%20view"))()
 end)
 
-about:Button("复仇者", function()
-    loadstring(game:HttpGet(('https://pastefy.ga/iGyVaTvs/raw'),true))()
+about:Button("分身", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
 end)
 
 about:Button("鼠标", function()
