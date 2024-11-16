@@ -1016,8 +1016,6 @@ about:Button("传送食堂", function()
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(921.0059204101562, 99.98993682861328, 2289.23095703125)
 end)
 
-local about = UITab1:section("『脚本』",true)
-
 about:Button("无敌模式", function()
   loadstring(game:HttpGet("https://pastebin.com/raw/LdTVujTA"))()
 end)
