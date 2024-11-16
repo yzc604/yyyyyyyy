@@ -187,12 +187,20 @@ about:Toggle("夜视","Toggle",false,function(Value)
 
 local about = UITab1:section("『之后的不排了』",true)
 
+about:Button("骂人不封号",function()
+loadstring(game:GetObjects("rbxassetid://1262435912")[1].Source)()
+end)
+
 about:Button("防20分钟踢",function()
 loadstring(game:HttpGet(('https://pastefy.app/6QUXuVkW/raw'),true))()
 end)
 
 about:Button("iy指令",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+about:Button("改fps",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()
 end)
 
 about:Button("汉化穿墙",function()
@@ -332,7 +340,7 @@ loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
 end)
 
 about:Button("FE 1x1x1x1", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/JipYNCht'),true))()
+loadstring(game:HttpGet("https://pastefy.app/IatH6evt/raw",true))()
 end)
 about:Button("FE大长腿", function()
     loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/7291747e9f093555573e027621f08d6e/raw/23b48f2463942befe19d81aa8a06e3222996242c/FE%2520Da%2520Feets'))()
@@ -363,11 +371,11 @@ about:Button("超长🐔巴", function()
 end)
 
 about:Button("操人", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/AHAJAJAKAK/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A.LUA", true))()
+loadstring(game:HttpGet("https://pastefy.app/K5nDLsqA/raw",true))()
 end)
 
 about:Button("FE动画中心", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
 end)
 about:Button("FE变玩家", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
