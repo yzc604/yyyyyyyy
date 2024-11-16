@@ -74,6 +74,14 @@ about:Label("       ")
 about:Label("感谢大家支持羊脚本")
 about:Label("十分感谢")
 
+local UITab1 = win:Tab("『关于作者』",'7734068321')
+
+local about = UITab1:section("作者发话",true)
+
+about:Label("脚本最大感谢者：小皮")
+about:Label("作者：yzc")
+about:Label("性别：不男不女")
+
 local UITab1 = win:Tab("『通用』",'7734068321')
 
 local about = UITab1:section("『调节区』",true)
