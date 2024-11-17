@@ -96,6 +96,18 @@ end)
 
 about:Slider('设置重力!', 'Sliderflag', 196.2, 196.2, 1000,false, function(Value)
         game.Workspace.Gravity = Value
+end) 
+
+about:Slider('设置血量', 'Sliderflag', 100, 1, 100,false, function(Value)
+    game.Players.LocalPlayer.Character.Humanoid.Health = Value
+    end)
+
+about:Slider('缩放距离', 'ZOOOOOM OUT!',  128, 128, 200000,false, function(value)
+    game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = value
+    end)
+
+about:Slider('缩放焦距(正常70)', 'Sliderflag', 70, 0.1, 250, false, function(v)
+        game.Workspace.CurrentCamera.FieldOfView = v
 end)
 
 local about = UITab1:section("『飞行区』",true)
