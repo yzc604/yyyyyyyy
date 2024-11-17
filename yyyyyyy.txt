@@ -79,6 +79,19 @@ local UITab1 = win:Tab("『关于作者』",'7734068321')
 local about = UITab1:section("作者发话",true)
 
 about:Label("脚本最大感谢者：小皮")
+
+about:Button("皮脚本",function()
+getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+end)
+
+about:Button("皮脚本",function()
+getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+end)
+
+about:Button("皮脚本",function()
+getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+end)
+
 about:Label("作者：yzc")
 about:Label("性别：不男不女")
 
@@ -227,6 +240,10 @@ end)
 
 about:Button("改fps",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()
+end)
+
+about:Button("fps显示",function()
+loadstring(game:HttpGet("https://pastefy.app/d9j82YJr/raw",true))()
 end)
 
 about:Button("汉化穿墙",function()
