@@ -126,6 +126,12 @@ about:Button("英文自瞄",function()
 loadstring(game:HttpGet("https://rentry.co/n55gmtpi/raw", true))()
 end)
 
+local about = UITab1:section("『透视区』",true)
+
+about:Button("小羊透视",function()
+loadstring(game:HttpGet("https://pastefy.app/QTjhfgut/raw",true))()
+end)
+
 local about = UITab1:section("『隐形』",true)
 
 about:Button("最新隐形",function()
@@ -363,20 +369,8 @@ about:Button("分身", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
 end)
 
-about:Button("鼠标", function()
-    loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
-end)
-
-about:Button("变怪物", function()
-    loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
-end)
-
-about:Button("香蕉枪", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
-end)
-
 about:Button("超长🐔巴", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/ESWSFND7", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/minecrafttotem/yzhs./main/Fe%20pp%20script%20very%20fun"))()
 end)
 
 about:Button("操人", function()
@@ -400,7 +394,9 @@ end)
 
 local UITab1 = win:Tab("『甩飞』",'7734068321')
 
-local about = UITab1:section("『别当出生』",true)
+local about = UITab1:section("『多种甩飞』",true)
+
+about:Label("别当出生")
 
 about:Button("旋转甩飞",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%97%8B%E8%BD%AC.lua"))()
