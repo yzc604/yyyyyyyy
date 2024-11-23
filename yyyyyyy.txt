@@ -413,11 +413,11 @@ local UITab1 = win:Tab("『传送』",'7734068321')
  
 local about = UITab1:section("『传送』",true)
 
-about:Dropdown("选择玩家名称","Dropdown", bai.dropdown,function(Value)
+about:Dropdown("选择玩家名称","Dropdown",function(Value)
     bai.playernamedied = Value
 end)
 
-about:Button("刷新列表", function()
+about:Button("刷新列表",function()
 	shuaxinlb(true)
 	dropdown:SetOptions(bai.dropdown)
 end)
