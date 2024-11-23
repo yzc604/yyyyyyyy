@@ -409,9 +409,11 @@ about:Button("自瞄全屏",function()
 loadstring(game:HttpGet("https://pastefy.app/n5LhGGgf/raw",true))()
 end)
 
-local Tab = about:Tab("传送到玩家")
-local about = Tab:section("yzc",true)
-local dropdown = win1:Dropdown("选择玩家名称",'Dropdown',bai.dropdown,function(v)
+local UITab1 = win:Tab("『玩家』",'7734068321')
+
+local about = UITab1:section("『玩家』",true)
+
+about:dropdown = win1:Dropdown("选择玩家名称",'Dropdown',bai.dropdown,function(v)
     bai.playernamedied = v
 end)
 
@@ -721,6 +723,86 @@ local about = UITab1:section("『巴掌』",true)
 about:Button("通用",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))() 
 end)
+
+about:Toggle("无CD","Toggle" ,false, function(Value)
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local tool = character:FindFirstChildOfClass("Tool") or player.Backpack:FindFirstChildOfClass("Tool")
+    
+    bazhangmnq = Value
+    
+    while bazhangmnq do
+    local localscript = tool:FindFirstChildOfClass("LocalScript")
+    local localscriptclone = localscript:Clone()
+    localscriptclone = localscript:Clone()
+    localscriptclone:Clone()
+    localscript:Destroy()
+    localscriptclone.Parent = tool
+    wait(0.1)
+    end
+    end)
+    
+    about:Button("获取计数器手套", function()
+    fireclickdetector(game.Workspace.CounterLever.ClickDetector)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,100,0)
+    wait(0.2)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(121)
+    for i,v in pairs(workspace.Maze:GetDescendants()) do
+    if v:IsA("ClickDetector") then
+    fireclickdetector(v)
+    end
+    end
+    end)
+    
+    about:Toggle("地牢亮度","Toggle" ,false, function(Value)
+     Light = Value
+        if not Light then
+            game.Lighting.Ambient = Color3.new(0, 0, 0)
+        end
+    end)
+    
+    about:Dropdown("传送","Dropdown",{"安全区","竞技场","埃及岛","果实岛","盘子","锦标赛","默认竞技场"},function(Value)
+    if Value == "安全区" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Spot.CFrame * CFrame.new(0,40,0)
+    elseif Value == "竞技场" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Origo.CFrame * CFrame.new(0,-5,0)
+    elseif Value == "埃及岛" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(215, -15.5, 0.5)
+    elseif Value == "果实岛" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Arena.island5.Union.CFrame * CFrame.new(0,3.25,0)
+    elseif Value == "盘子" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.Plate.CFrame * CFrame.new(0,2,0)
+    elseif Value == "锦标赛" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Battlearena.Arena.CFrame * CFrame.new(0,10,0)
+    elseif Value == "默认竞技场" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(120,360,-3)
+    end
+    end)
+    
+    about:Toggle("复古技能","Toggle" ,false, function(Value)
+    RetroSpam = Value
+    while RetroSpam do
+    game:GetService("ReplicatedStorage").RetroAbility:FireServer(RetroAbility)
+    task.wait()
+    end
+    end)
+    
+    about:Dropdown("复古技能选择","Dropdown",{"Rocket Launcher","Ban Hammer","Bomb"}, function(Value)
+    RetroAbility = Value
+    end)
+    
+    about:Toggle("自动捡糖果","Toggle",false, function(Value)
+    CandyCornFarm = Value
+    while CandyCornFarm do
+    for i, v in pairs(workspace.CandyCorns:GetChildren()) do
+                    if v:FindFirstChildWhichIsA("TouchTransmitter") then
+    v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                    end
+                end
+    task.wait()
+    end
+    end)
 
 about:Toggle("获取炼金术师材料","Toggle", false, function(Value)
 AlchemistIngredients = Value
