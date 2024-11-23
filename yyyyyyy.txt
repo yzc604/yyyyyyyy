@@ -409,25 +409,6 @@ about:Button("自瞄全屏",function()
 loadstring(game:HttpGet("https://pastefy.app/n5LhGGgf/raw",true))()
 end)
 
-local UITab1 = win:Tab("『玩家』",'7734068321')
-
-local about = UITab1:section("『玩家』",true)
-
-about:dropdown = win1:Dropdown("选择玩家名称",'Dropdown',bai.dropdown,function(v)
-    bai.playernamedied = v
-end)
-
-about:Button("刷新列表", function()
-	shuaxinlb(true)
-	dropdown:SetOptions(bai.dropdown)
-end)
-
-about:Button("传送到玩家旁边",function()
-  
-            tp(game:GetService("Players")[bai.playernamedied].Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0))
-      
-end)
-
 local UITab1 = win:Tab("『光影』",'7734068321')
 
 local about = UITab1:section("『光影』",true)
