@@ -365,6 +365,52 @@ about:Button("夜视仪",function()
     _G.OnShop = trueloadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
 end)
 
+local UITab1 = win:Tab("『歌』",'7734068321')
+
+local about = UITab1:section("歌",true)
+
+about:Button("防空警报",function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://792323017"
+    sound.Parent = game.Workspace
+    sound:Play()
+end)
+
+about:Button("彩虹瀑布",function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1837879082"
+    sound.Parent = game.Workspace
+    sound:Play()
+end)
+
+about:Button("义勇军进行曲",function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1845918434"
+    sound.Parent = game.Workspace
+    sound:Play()
+end)
+
+about:Button("baller",function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://13530438299"
+    sound.Parent = game.Workspace
+    sound:Play()
+end)
+
+about:Button("疾风行动",function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1842559618"
+    sound.Parent = game.Workspace
+    sound:Play()
+end)
+
+about:Button("身临其境",function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://9048378262"
+    sound.Parent = game.Workspace
+    sound:Play()
+end)
+
 local UITab1 = win:Tab("『圆圈自瞄』",'7734068321')
 
 local about = UITab1:section("『好用的圆圈自瞄』",true)
