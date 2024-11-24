@@ -484,10 +484,18 @@ about:Button("传送到玩家旁边",function()
       
 end)
 
-local about = UITab1:section("『透视区』",true)
+local about = UITab1:section("『透视绘制区』",true)
 
-about:Button("小羊透视",function()
+about:Button("人物和名字",function()
 loadstring(game:HttpGet("https://pastefy.app/QTjhfgut/raw",true))()
+end)
+
+about:Button("人物线条",function()
+loadstring(game:HttpGet("https://pastefy.app/HigRNV6D/raw",true))()
+end)
+
+about:Button("跟踪线条和方框",function()
+loadstring(game:HttpGet("https://pastefy.app/p8Ss6RvT/raw",true))()
 end)
 
 local about = UITab1:section("『隐形』",true)
