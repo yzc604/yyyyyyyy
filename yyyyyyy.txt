@@ -1451,9 +1451,9 @@ about:Button("忍者传奇汉化",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/renzhechuanqihanhua/refs/heads/main/%E5%BF%8D%E8%80%85%E4%BC%A0%E5%A5%87%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC%20(1).txt"))()
 end)
 
-local UITab7 = win:Tab("『极速传奇』",'16060333448')
+local UITab1 = win:Tab("『极速传奇』",'16060333448')
 
-local about = UITab7:section("『极速传奇』",true)
+local about = UITab1:section("『极速传奇』",true)
 
 about:Textbox("修改经验值", "arg", "输入",function(arg)
 game:GetService("Players").LocalPlayer.exp.Value=arg
