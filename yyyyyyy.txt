@@ -1510,33 +1510,6 @@ about:Button("汉化",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/egMXJcwB", true))()
 end)
 
-about:Toggle("自动更改最大跳跃", false, function(state)
-    Autoexe = state
-    if Autoexe then
-        while Autoexe do
-            game:GetService("ReplicatedStorage").rEvents.changeSpeedJumpRemote:InvokeServer("changeJump",math.huge)
-            wait()
-            end
-        end
-end)
-about:Toggle("自动更改最大速度", false, function(state)
-    Autoexe = state
-    if Autoexe then
-        while Autoexe do
-            game:GetService("ReplicatedStorage").rEvents.changeSpeedJumpRemote:InvokeServer("changeSpeed",math.huge)
-            wait()
-            end
-        end
-end)
-about:Toggle("自动重生", false, function(state)
-    Autoexe = state
-    if Autoexe then
-        while Autoexe do
-            game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer("rebirthRequest")
-            wait()
-            end
-        end
-end)
 about:Toggle("自动进化所有宠物", false, function(state)
     Autoexe = state
     if Autoexe then
